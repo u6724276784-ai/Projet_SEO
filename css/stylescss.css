@@ -8,27 +8,27 @@ body {
   position: relative; }
   body h1, body h2 {
     text-transform: uppercase;
-    color: #1f2c34;
+    color: #ffffff;
     font-family: "Monserrat", sans-serif;
     font-weight: 700;
-    border-left: 5px solid #e96b55;
+    border-left: 5px solid #ffffff;
     padding-left: 5%;
     margin-bottom: 3%; }
   body a {
-    color: #e96b55; }
+    color: #ffffff; }
     body a:hover {
-      color: #5eab99;
+      color: #cccccc;
       text-decoration: none; }
   body .btn-custom {
     background: transparent;
-    border: 2px solid #e96b55;
+    border: 2px solid #ffffff;
     border-radius: 25px;
-    color: #e96b55;
+    color: #ffffff;
     font-weight: 600;
     text-transform: uppercase; }
     body .btn-custom:hover {
-      border-color: #5eab99;
-      color: #5eab99; }
+      border-color: #cccccc;
+      color: #cccccc; }
   body .container-fluid {
     padding: 0; }
     body .container-fluid aside {
@@ -46,13 +46,13 @@ body {
     /* Place the button 30px from the right */
     z-index: 99;
     /* Make sure it does not overlap */
-    border: 2px solid #e96b55;
+    border: 2px solid #ffffff;
     /* Remove borders */
     outline: none;
     /* Remove outline */
     background-color: transparent;
     /* Set a background color */
-    color: #e96b55;
+    color: #ffffff;
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
@@ -63,7 +63,7 @@ body {
     font-size: 18px;
     /* Increase font size */ }
   body #myBtn:hover {
-    background-color: #f0f193;
+    background-color: rgba(255,255,255,0.2);
     /* Add a dark-grey background on hover */ }
 
 .maNav {
@@ -73,9 +73,9 @@ body {
     color: #fff;
     font-weight: 600; }
     .maNav .navbar-nav a.nav-link:hover {
-      color: #5eab99; }
+      color: #cccccc; }
   .maNav .navbar-nav a.nav-link.active {
-    color: #5eab99; }
+    color: #ffffff; }
 
 .welcome aside {
   background: url("../images/01-Image.jpg") no-repeat bottom;
@@ -83,7 +83,7 @@ body {
   height: auto;
   min-height: 200px; }
 .welcome article {
-  background: #e96b55;
+  background:#000000;
   color: white;
   text-align: center;
   text-transform: uppercase; }
@@ -95,14 +95,14 @@ body {
       font-weight: 700; }
   .welcome article .textshadow {
     font-size: 4rem;
-    text-shadow: 5px 0px 0px #5eab99; }
+    text-shadow: 5px 0px 0px #cccccc; }
   .welcome article .btn-custom {
-    color: #f0f193;
-    border-color: #f0f193;
+    color: #ffffff;
+    border-color: #ffffff;
     margin-top: 5%; }
     .welcome article .btn-custom:hover {
-      color: white;
-      border-color: white; }
+      color:#cccccc;
+      border-color: #cccccc; }
 
 .about aside {
   background: url("../images/02-Image.jpg") no-repeat center;
@@ -117,7 +117,7 @@ body {
   min-height: 200px; }
 
 .movie {
-  background: #f8d480 url("../images/04-Image.jpg") no-repeat bottom;
+  background: #2a2a2a url("../images/04-Image.jpg") no-repeat bottom;  
   background-size: 100% auto;
   height: auto;
   min-height: 200px; }
@@ -164,7 +164,7 @@ footer {
     color: white; 
     margin-top: 0.5rem;}
     footer .footerLinks a:hover {
-      color: #5eab99; }
+      color: #cccccc; }
   footer .social .socialicons a {
     color: white;
     font-size: 1.5rem;
@@ -174,10 +174,10 @@ footer {
     display: inline-block;
     width: 45px;
     height: 45px;
-    background-color: #e96b55;
+    background-color: #ffffff;
     border-radius: 45px; }
     footer .social .socialicons a:hover {
-      background-color: #5eab99; }
+      background-color: #cccccc; }
   footer .socketBkg {
     background: #1f2c34;
     width: 100%;
@@ -190,7 +190,7 @@ footer .partenaire ul li{
   margin-top: 1rem;
 }
 .jumbotron {
-  background: #5eab99; }
+  background: #2a2a2a; }
   .jumbotron span {
     color: white;
     text-transform: uppercase;
@@ -204,7 +204,7 @@ footer .partenaire ul li{
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif; }
   .container-fluid.filmlist .note {
-    color: #e96b55;
+    color: #ffffff;
     margin: 3% 0%; }
   .container-fluid.filmlist span {
     color: lightgrey;
@@ -301,3 +301,143 @@ footer .partenaire ul li{
   font-size: 1rem; }
 
 /*# sourceMappingURL=stylescss.css.map */
+
+/* 全局黑色背景 + 白色文字 */
+html, body {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* 所有模块、头部、底部、容器 → 强制黑色 */
+header, footer, div, section, .container, .card, .banner, 
+.navbar, .col, .row, .module, .right-banner {
+  background: #000 !important;
+  background-image: none !important;
+  border: none !important;
+}
+
+/* 文字全部白色 */
+h1, h2, h3, h4, h5, h6, p, a, span {
+  color: #fff !important;
+}
+
+/* ========== 欢迎区域增强样式 ========== */
+
+/* 欢迎区域整体容器 */
+.welcome article {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 2rem 1.5rem !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 可选：添加微妙的渐变光晕效果 */
+.welcome article::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* 主题标签（新增） */
+.welcome .theme-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 0.3rem 1rem;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+/* 主标题样式优化 */
+.welcome article p:first-of-type {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+/* 日期容器优化 */
+.welcome article .date {
+  padding: 1rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* 月份和副文字样式 */
+.welcome article .date span:first-child,
+.welcome article .date span:last-child {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+/* 年份数字特殊处理 */
+.welcome article .textshadow {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+  margin: 0 0.2rem;
+  line-height: 1;
+}
+
+/* 描述文字 */
+.welcome article p:nth-of-type(2) {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-transform: none;
+  max-width: 90%;
+  margin: 1rem auto;
+  opacity: 0.9;
+}
+
+/* 按钮优化 */
+.welcome article .btn-custom {
+  margin-top: 1rem;
+  padding: 0.6rem 1.8rem;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.welcome article .btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* 欢迎区域 - 覆盖不需要大写的元素 */
+.welcome article .hero-date span,
+.welcome article .hero-description,
+.welcome article .btn-custom {
+  text-transform: none;
+}
+
+/* 标题保持大写 */
+.welcome article .hero-title {
+  text-transform: uppercase;
+}
+
+/* 标题用 Montserrat */
+.welcome article .hero-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* 其他所有文字用 Open Sans */
+.welcome article,
+.welcome article .hero-description,
+.welcome article .hero-date span,
+.welcome article .btn-custom {
+  font-family: "Open Sans", sans-serif !important;
+}
