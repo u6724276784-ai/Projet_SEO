@@ -24,6 +24,17 @@
 		<!--<link rel="stylesheet" href="css/style.css">-->
 		<link rel="stylesheet" href="css/stylescss.css">
 		<link rel="stylesheet"  href="webfonts/all.css">
+
+		<!-- 图片黑白变彩色效果（我帮你加在这里了）-->
+		<style>
+		.gray-to-color {
+		  filter: grayscale(100%);
+		  transition: all 0.5s ease;
+		}
+		.gray-to-color:hover {
+		  filter: grayscale(0%);
+		}
+		</style>
 		
 		<!-- VOTRE GOOGLE ANALYTICS OFFICIEL -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYN3NX30CN"></script>
@@ -89,7 +100,7 @@
 			<div class="container">
 				<div class="row" style="align-items: center;">
 					<aside class="col-lg-6">
-						<img src="images/enpleinaircinema.jpeg" class="img-fluid" alt="Projection en plein air au Parc Monceau">
+						<img src="images/enpleinaircinema.jpeg" class="img-fluid gray-to-color" alt="Projection en plein air au Parc Monceau">
 					</aside>
 					<article class="col-lg-6">
     <div class="hero-content">
